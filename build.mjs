@@ -1,5 +1,5 @@
 import {mkdir,writeFile,cp} from 'node:fs/promises';
-import {product as p,config,faqs} from '../data.mjs';
+import {product as p,config,faqs} from './data.mjs';
 const nav=[['/','홈'],['/ebook/','전자책'],['/programs/','강의·챌린지'],['/resources/','무료 자료'],['/about/','브랜드 소개'],['/contact/','문의']];
 const link=(url,label,cls='button')=>`<a class="${cls}" href="${url}">${label}</a>`;
 const buy=()=>'<button class="button" data-buy>전자책 구매하기 <span aria-hidden="true">↗</span></button>';
